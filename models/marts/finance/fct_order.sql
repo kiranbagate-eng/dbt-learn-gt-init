@@ -11,6 +11,7 @@ orders_payments as (
        order_id,
        sum(case when status = 'succeeded' then amount else 0 end) as amount
     from payments 
+    group by order_id
 ),
 final as (
 
