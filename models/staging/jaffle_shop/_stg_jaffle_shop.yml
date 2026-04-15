@@ -3,7 +3,7 @@ models:
     description: One unique customer per row
     columns: 
       - name: customer_id
-        description: the primary key
+        description: primary key
         data_tests:
           - unique
           - not_null
@@ -11,17 +11,20 @@ models:
   - name: stg_jaffle_shop_orders
     columns:
       - name: order_id
+        description: primary key
         data_tests:
           - unique
           - not_null
         
       - name: status
+        description: "{{ doc('order_status') }}"
         data_tests:
           - accepted_values:
               arguments:
                 values: ['placed', 'shipped', 'completed', 'returned', 'return_pending']
                 
       - name: customer_id
+        description: Foreign key to stg_customers.customer_id
         data_tests:
           - relationships:
               arguments:

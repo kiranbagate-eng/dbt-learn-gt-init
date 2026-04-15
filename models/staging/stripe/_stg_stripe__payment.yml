@@ -1,0 +1,9 @@
+models:
+  - name: stg_stripe__payments
+    description: Raw data from postgres database
+    columns: 
+      - name: payment_id
+        description: primary key.
+        data_tests:
+          - unique
+          - not_null
