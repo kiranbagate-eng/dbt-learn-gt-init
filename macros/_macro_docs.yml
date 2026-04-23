@@ -10,3 +10,12 @@ macros:
       - name: decimals
         type: integer
         description: "The number of places you want to round your amount to"
+  - name: grant_select
+    description: "A macro that generates a GRANT SELECT statement for all tables in a given schema."
+    arguments:
+      - name: schema_name
+        type: string
+        description: "The name of the schema for which you want to generate the GRANT SELECT statement."
+      - name: role_name
+        type: string
+        description: "The name of the role to which you want to grant SELECT permissions."
