@@ -1,12 +1,12 @@
-macros: 
-      - name: cents_to_dollars
-        description: "A macro that converts cents to cents to dollars and rounds it to input decimal places or 2 if none is provided."
-        arguments:
-          - name: column_name
-            type: string
-            description: "The name of the column you want to converts"
-          - name: decimals
-            type: integer
-            description: "The number of places you want to round your amount to"
-            default: 2
-        returns: "A SQL expression that converts cents to dollars"
+version: 2
+
+macros:
+  - name: cents_to_dollars
+    description: "A macro that converts cents to dollars and rounds it to input decimal places or 2 if none is provided."
+    arguments:
+      - name: column_name
+        type: string
+        description: "The name of the column you want to convert"
+      - name: decimals
+        type: integer
+        description: "The number of places you want to round your amount to"

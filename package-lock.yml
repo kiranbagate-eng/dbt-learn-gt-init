@@ -2,9 +2,9 @@ packages:
 - package: dbt-labs/audit_helper
   name: audit_helper
   version: 0.13.0
-- package: dbt-labs/codegen
+- git: https://github.com/dbt-labs/dbt-codegen.git
   name: codegen
-  version: 0.14.0
+  revision: 52884e848200e4a1e637b30b011b3ee4bc8f5714
 - package: brooklyn-data/dbt_artifacts
   name: dbt_artifacts
   version: 2.10.0
@@ -14,4 +14,4 @@ packages:
 - package: gitlabhq/snowflake_spend
   name: snowflake_spend
   version: 1.4.0
-sha1_hash: d73ee3c888d7a86753b065f2ab48052e12946cf3
+sha1_hash: 57071db88e4d4062df4ee7dc8f8dbdf0d2e34ea1
