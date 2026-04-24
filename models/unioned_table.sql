@@ -1,0 +1,1 @@
+{{ union_tables_by_prefix(database = 'raw', schema = 'learn_jinja', prefix = 'orders__') }}

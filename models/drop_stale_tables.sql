@@ -1,0 +1,1 @@
+{{ clean_stale_models(database=target.database, schema=target.schema, days=7, dry_run=True) }}
